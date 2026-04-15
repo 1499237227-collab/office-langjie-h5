@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#d4ff4a" />
+  <title>测测你是浪姐里的谁 · 牛马办公室版</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="bg-blobs" aria-hidden="true"></div>
+  <main class="app" id="app">
+    <!-- 首页 -->
+    <section class="screen screen--home is-active" id="screen-home" aria-labelledby="home-title">
+      <header class="top-bar">
+        <span class="top-bar__spacer" aria-hidden="true"></span>
+        <div class="top-bar__title">测测你是浪姐里的谁</div>
+        <span class="top-bar__spacer" aria-hidden="true"></span>
+      </header>
+      <h1 class="sr-only" id="home-title">测测你是浪姐里的谁 · 牛马办公室版</h1>
+
+      <div class="hero-card" aria-hidden="true">
+        <svg class="hero-svg" viewBox="0 0 320 280" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="g-lime" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#d4ff4a" />
+              <stop offset="100%" stop-color="#9fe600" />
+            </linearGradient>
+          </defs>
+          <rect x="40" y="48" width="240" height="120" rx="16" fill="url(#g-lime)" />
+          <circle cx="72" cy="40" r="28" fill="#5b9cff" />
+          <rect x="52" y="56" width="36" height="8" rx="4" fill="#fff" opacity="0.9" />
+          <g fill="#fff">
+            <path d="M100 64l4 8 8 2-8 4-4 8-4-8-8-2 8-4z" transform="scale(0.85) translate(20,0)" />
+            <path d="M130 58l3 6 6 1.5-6 3-3 6-3-6-6-1.5 6-3z" />
+            <path d="M158 62l3 6 6 1.5-6 3-3 6-3-6-6-1.5 6-3z" />
+            <path d="M186 58l3 6 6 1.5-6 3-3 6-3-6-6-1.5 6-3z" />
+          </g>
+          <rect x="56" y="188" width="208" height="14" rx="7" fill="#c8ff3a" opacity="0.85" />
+          <rect x="56" y="210" width="208" height="14" rx="7" fill="#c8ff3a" opacity="0.55" />
+          <rect x="48" y="120" width="56" height="28" rx="14" fill="#ff8a3d" />
+          <polygon points="78,128 78,140 86,134" fill="#fff" />
+          <text x="56" y="139" font-size="11" font-weight="700" fill="#fff" font-family="system-ui,sans-serif">30&quot;</text>
+          <rect x="252" y="112" width="22" height="72" rx="11" fill="#ff6b9d" opacity="0.9" />
+          <circle cx="263" cy="128" r="9" fill="#ffe135" stroke="#fff" stroke-width="2" />
+          <rect x="268" y="96" width="28" height="28" rx="8" fill="#5b9cff" />
+          <path d="M278 104h8v8h-8z M282 108h4v4h-4z" fill="#fff" opacity="0.9" />
+          <circle cx="160" cy="108" r="52" fill="#fff" stroke="#111" stroke-width="3" />
+          <circle cx="138" cy="100" r="12" fill="#5b9cff" />
+          <circle cx="160" cy="96" r="12" fill="#ff8a3d" />
+          <circle cx="182" cy="100" r="12" fill="#ffe135" />
+          <circle cx="148" cy="118" r="12" fill="#7fe08a" />
+          <circle cx="172" cy="118" r="12" fill="#b0b0b0" />
+          <path d="M132 108q6 4 12 0 M154 104q8 6 16 0 M172 108q6 4 12 0" stroke="#111" stroke-width="2" fill="none" stroke-linecap="round" />
+        </svg>
+      </div>
+
+      <div class="hook">
+        <p class="hook__line">
+          挖掘你的 <span class="hook__en">HIDDEN NIUMÁ*</span>
+        </p>
+        <p class="hook__mega">办公室牛马人格</p>
+        <p class="hook__line">
+          看看你的 <span class="hook__en">LANGJIÉ PERSONA*</span>
+        </p>
+        <p class="hook__mega hook__mega--split">
+          浪姐人设<span class="hook__lime">反差</span>
+        </p>
+        <p class="hook__bang">到底有多大<span class="hook__bang-mark">!!!!!!!!!!</span></p>
+        <div class="hook__arrows" aria-hidden="true">
+          <span>↓</span><span>↓</span><span>↓</span><span>↓</span><span>↓</span>
+        </div>
+      </div>
+
+      <p class="kicker">三道题 · 牛马办公室版</p>
+      <button type="button" class="btn btn--cta" id="btn-start">开始测一测</button>
+      <p class="fineprint">
+        *自嘲向娱乐测试，结果仅供玩梗，不构成任何职业或心理建议。
+      </p>
+    </section>
+
+    <!-- 答题 -->
+    <section class="screen screen--quiz" id="screen-quiz" hidden aria-live="polite">
+      <header class="top-bar">
+        <button type="button" class="top-bar__back" id="btn-quiz-back" aria-label="返回首页">←</button>
+        <span class="top-bar__title">办公室浪姐诊断</span>
+        <span class="top-bar__spacer" aria-hidden="true"></span>
+      </header>
+      <header class="quiz-head">
+        <span class="quiz-progress" id="quiz-progress">第 1 / 3 题</span>
+      </header>
+      <h2 class="quiz-q" id="quiz-question"></h2>
+      <ul class="options" id="quiz-options" role="list"></ul>
+      <div class="quiz-footer" id="quiz-footer" hidden>
+        <button type="button" class="btn btn--cta btn--block" id="btn-view-result">查看诊断结果</button>
+      </div>
+    </section>
+
+    <!-- 结果 -->
+    <section class="screen screen--result" id="screen-result" hidden>
+      <header class="top-bar">
+        <button type="button" class="top-bar__back" id="btn-result-back" aria-label="返回首页">←</button>
+        <span class="top-bar__title">诊断书</span>
+        <span class="top-bar__spacer" aria-hidden="true"></span>
+      </header>
+      <div class="diagnosis" id="diagnosis-card">
+        <p class="diagnosis__label">临床印象（误）</p>
+        <h2 class="diagnosis__title" id="result-title"></h2>
+        <div class="diagnosis__figure" id="result-figure"></div>
+        <div class="diagnosis__body" id="result-body"></div>
+      </div>
+      <div class="result-actions">
+        <button type="button" class="btn btn--secondary" id="btn-retry">再测一次</button>
+      </div>
+    </section>
+  </main>
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
