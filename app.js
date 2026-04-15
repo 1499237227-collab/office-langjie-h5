@@ -10,7 +10,7 @@ const TYPE_META = {
   A: {
     key: "A",
     title: "被确诊为 办公室【拼命小白花姐】",
-    image: "./assets/result-1.png",
+    image: "./result-1.png",
     lines: [
       "每天最早到、最晚走，方案一版一版抠细节。",
       "领导问这是谁做的？",
@@ -20,7 +20,7 @@ const TYPE_META = {
   B: {
     key: "B",
     title: "被确诊为 办公室【业务直球姐】",
-    image: "./assets/result-2.png",
+    image: "./result-2.png",
     lines: [
       "别人一听加需求就先叹气，你先问三遍：目标、资源、排期。对不齐，你当场就说：“这个走不通，我们别自欺欺人了。”",
       "会议室需要你，因为没有你，大家都只敢“嗯嗯好”。",
@@ -29,7 +29,7 @@ const TYPE_META = {
   C: {
     key: "C",
     title: "被确诊为 办公室【综艺气氛姐】",
-    image: "./assets/result-3.png",
+    image: "./result-3.png",
     lines: [
       "甲方再离谱，你都能先整一个段子。PPT 改到凌晨，你还能说：“欢迎来到职场生存现场晚会。”",
       "你是全组情绪调节阀：骂归骂，笑归笑，第二天还是会准时来上班。",
@@ -38,7 +38,7 @@ const TYPE_META = {
   D: {
     key: "D",
     title: "被确诊为 办公室【清醒算账姐】",
-    image: "./assets/result-4.png",
+    image: "./result-4.png",
     lines: [
       "别人听到新活儿说“我试试吧”，你先翻日历算时间：“这不在我这条线里，加资源可以谈，不加就先别算我。”",
       "你不是难搞，你只是比谁都清楚——哪些才算自己的舞台。",
